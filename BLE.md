@@ -103,6 +103,7 @@ Value <EDIV> of type REG_DWORD (4), data length 4 [0x4]
 $ printf "%d\n" 0x0000dc58
 56408
 $ echo "EDIV 56408" >> file
+```
 17. Last parameter to copy:
 ```
 (...)\Parameters\Keys\ba1234567890\be0011223344> hex IRK
