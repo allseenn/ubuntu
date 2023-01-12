@@ -103,7 +103,7 @@ Dont forget to put 0x before 7FBE81CFCB102BE8
 ```
 $ echo "ERand 9204937417856920552" >> file
 ```
-15. Third EDIV we just copy decimal value from regestri editor from [value if type DWORD] colomn, or make commands:
+15. Third EDIV we just copy decimal value from regestry editor from [value if type DWORD] colomn, or make commands:
 ```
 (...)\Parameters\Keys\ba1234567890\be0011223344> cat EDIV
 Value <EDIV> of type REG_DWORD (4), data length 4 [0x4]
