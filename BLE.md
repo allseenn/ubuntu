@@ -1,4 +1,4 @@
-# How to pair same BLE devices with same PC with dual OSes boot
+## How to pair same BLE devices with same PC with dual OSes boot
 BLE - Bluetooth Low Energy mouse
 PC -  Notebook x86 core i5
 OSes - Windows 11 and Ubuntu 22.10
