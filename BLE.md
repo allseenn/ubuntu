@@ -160,6 +160,7 @@ Rand=9204937417856920552
 
 [DeviceID]
 ...
+```
 As you could see info file contains many sectrions and each has several parameters, for us interesting sections is:
 - [IdentityResolvingKey]
 - [LongTermKey]
