@@ -36,7 +36,8 @@ Node has 1 subkeys and 0 values
   key name
   <ba1234567890>
 ```
-Where <ba1234567890> is mac addrees of you onboard bluetooth adaptor without columns: BA:12:34:56:78:90
+Where <ba1234567890> is mac addrees of you onboard bluetooth adaptor without columns: BA:12:34:56:78:90.
+  
 10. Dig and look to it <ba1234567890> with:
 ```
 (...)\Services\BTHPORT\Parameters\Keys> cd ba1234567890
