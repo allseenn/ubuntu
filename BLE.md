@@ -131,9 +131,9 @@ IRK E69B89AE474B18622B1FA51EF43DBF95
 ```
 # vim info
 [General]
-...
+
 [ConnectionParameters]
-...
+
 [IdentityResolvingKey]
 Key=E69B89AE474B18622B1FA51EF43DBF95
 
@@ -159,7 +159,7 @@ EDiv=56408
 Rand=9204937417856920552
 
 [DeviceID]
-...
+
 ```
 As you could see info file contains many sectrions and each has several parameters, for us interesting sections is:
 - [IdentityResolvingKey]
