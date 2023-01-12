@@ -36,9 +36,9 @@ Node has 1 subkeys and 0 values
   key name
   <ba1234567890>
 ```
-Where <ba1234567890> is mac addrees of you onboard bluetooth adaptor without columns: BA:12:34:56:78:90.
+Where ba1234567890 is mac addrees of you onboard bluetooth adaptor without columns: BA:12:34:56:78:90.
   
-10. Dig and look to it <ba1234567890> with:
+10. Dig and look to it ba1234567890 with:
 ```
 (...)\Services\BTHPORT\Parameters\Keys> cd ba1234567890
 (...)\Services\BTHPORT\Parameters\Keys\ba1234567890> ls
@@ -48,9 +48,9 @@ Node has 1 subkeys and 1 values
   size     type              value name             [value if type DWORD]
     16  3 REG_BINARY         <MasterIRK>
 ```
-Where <be0011223344> is mac address of you mouse.
+Where be0011223344 is mac address of you mouse.
     
-11. Dive to it <be0011223344>:
+11. Dive to be0011223344:
 ```
     (...)\BTHPORT\Parameters\Keys\ba1234567890> cd be0011223344
 
