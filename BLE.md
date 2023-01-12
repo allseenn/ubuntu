@@ -62,10 +62,12 @@ Node has 0 subkeys and 9 values
      4  4 REG_DWORD          <AuthReq>                 45 [0x2d]
 ```
 13. Futher we copy to file or writedown on paper 4 parameter:
-- <LTK>
-- <ERand>
-- <EDIV>
-- <IRK>
+```
+<LTK>
+<ERand>
+<EDIV>
+<IRK>
+```
 14. With hex or cat command we open our <LTK>:
 ```
 (...)\Parameters\Keys\ba1234567890\be0011223344> hex LTK
@@ -132,9 +134,11 @@ IRK E69B89AE474B18622B1FA51EF43DBF95
 ```
 # vim info
 [General]
-
+...
+  
 [ConnectionParameters]
-
+...
+  
 [IdentityResolvingKey]
 Key=E69B89AE474B18622B1FA51EF43DBF95
 
@@ -160,6 +164,7 @@ EDiv=56408
 Rand=9204937417856920552
 
 [DeviceID]
+...
 ```
 As you could see info file contains many sectrions and each has several parameters, for us interesting sections is:
 - [IdentityResolvingKey]
