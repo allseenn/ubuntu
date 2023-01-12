@@ -68,7 +68,7 @@ Node has 0 subkeys and 9 values
 <EDIV>
 <IRK>
 ```
-14. With hex or cat command we open our <LTK>:
+14. With hex or cat command we open our LTK:
 ```
 (...)\Parameters\Keys\ba1234567890\be0011223344> hex LTK
 Value <LTK> of type REG_BINARY (3), data length 16 [0x10]
@@ -79,7 +79,7 @@ So, writedown to file with second terminal or your prefered editor:
 ```
 $ echo "LTK A72317D4EF34307E4180CEFE0C3BC590" >> file
 ```
-15. Get second one <ERand>
+15. Get second one ERand
 ```
 (...)\Parameters\Keys\ba1234567890\be0011223344> hex ERand
 Value <ERand> of type REG_QWORD (b), data length 8 [0x8]
@@ -97,7 +97,7 @@ Dont forget to put 0x before 7FBE81CFCB102BE8
 ```
 $ echo "ERand 9204937417856920552" >> file
 ```
-16. Third <EDIV> we just copy decimal value from regestri editor from [value if type DWORD] colomn, or make commands:
+16. Third EDIV we just copy decimal value from regestri editor from [value if type DWORD] colomn, or make commands:
 ```
 (...)\Parameters\Keys\ba1234567890\be0011223344> cat EDIV
 Value <EDIV> of type REG_DWORD (4), data length 4 [0x4]
@@ -106,7 +106,7 @@ $ printf "%d\n" 0x0000dc58
 56408
 $ echo "EDIV 56408" >> file
 ```
-17. Last parameter to copy:
+17. Last parameter IRK to copy:
 ```
 (...)\Parameters\Keys\ba1234567890\be0011223344> hex IRK
 Value <IRK> of type REG_BINARY (3), data length 16 [0x10]
