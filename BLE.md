@@ -191,4 +191,4 @@ to Key parameter of three sections
 - [LongTermKey]
 - [PeripheralLongTermKey]
 - [SlaveLongTermKey]
-24. Save, Reboot and Swith On you mouse.
+24. Save, Reboot and Swith On your mouse.
