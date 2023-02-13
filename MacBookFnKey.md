@@ -5,7 +5,7 @@
 ```
 2. Trigger copying the configuration into the initramfs bootfile.
 ```
-# update-initramfs -u -k all
+# update-initramfs
 ```
 3. Reboot
 ```
