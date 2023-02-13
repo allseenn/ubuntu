@@ -24,7 +24,7 @@ systemctl set-default multi-user.target
 5. To start graphical desctop just exec:
 ```
 startx
-``
+```
 To restore descktop autostart just change init level with exec:
 ```
 systemctl set-default graphical.target
