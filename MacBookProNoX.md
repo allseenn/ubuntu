@@ -1,4 +1,5 @@
 # To disable X autostart on macbook pro with nvidia GPU.
+Befor changing system files i recomend you install and tune local openssh server, for emergence case. If somethin goes wrong display will not work. You could connect via ssh and restore settings.
 1. MacBook has nvidia GPU onboard its driver must be blacklisted in file:
 ```
 cd /etc/modprobe.d
