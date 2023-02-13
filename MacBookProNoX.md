@@ -1,4 +1,4 @@
-To disable X autostart. For manual startx. 
+# To disable X autostart on macbook pro with nvidia GPU. For manual startx. 
 1. MacBook has nvidia GPU onboard its driver must be blacklisted in file:
 ```
 cd /etc/modprobe.d
