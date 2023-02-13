@@ -15,7 +15,7 @@ GRUB_TERMINAL=console
 save and update grub:
 ```
 update-grub
-``
+```
 3. Need to change system init level to 3:
 ```
 systemctl set-default multi-user.target
