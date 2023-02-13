@@ -7,7 +7,7 @@ echo "blacklist nvidia_uvm >> balcklist-nvidia.conf
 ```
 2. In /etc/default/grub need to be set:
 ```
-#first line with #nvidia.Nvreg..# enables Brighness contorl with F1 and F2 keys
+#first line with nvidia.Nvreg.. enables Brighness contorl with F1 and F2 keys
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nvidia.NVreg_RegistryDwords=EnableBrightnessControl=1"
 GRUB_CMDLINE_LINUX="text"
 GRUB_TERMINAL=console
