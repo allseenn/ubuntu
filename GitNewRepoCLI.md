@@ -1,4 +1,7 @@
 # How-to make remote repo without web-browser
+
+[Russian advanced how-to using GigHub API with cli](https://github.com/allseenn/git/tree/main/03.Tasks)
+
 Little instruction how to make local repo *seminar2* then we make remote public repo *seminar2* on github and push local branches from Windows PC and Linux PC to remote. At last, through web browser we create third branch and merge others to it.
 As result, we produce 4 branches:
 + win - managed with Windows PC 
