@@ -6,3 +6,5 @@
 ### 5. [Instruction](GitNewRepoCLI.md) how to make new repo on GitHub using command line terminal
 ### 6. [Instruction](https://github.com/allseenn/dict_ruen) how to install Russian-English dictionary
 ### 7. [Instruction](MacBookVimKeys.md) how to remap key on MacBookPro with Ubuntu for vim
+### 8. [Instruction](HunSpellinApps.md) how to activate spell chek in some Ubuntu apps
+
