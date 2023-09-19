@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=На линух
+Comment=from UTF-8 to unicode for remote linux
+Exec=utf8_unicode.sh
+Icon=xfce4-whiskermenu
+Path=
+Terminal=false
+StartupNotify=false

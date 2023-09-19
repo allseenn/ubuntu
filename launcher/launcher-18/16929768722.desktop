@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Сюда
+Comment=from unicode to utf
+Exec=unicode_utf8.sh
+Icon=accessories-character-map
+Path=
+Terminal=false
+StartupNotify=false
