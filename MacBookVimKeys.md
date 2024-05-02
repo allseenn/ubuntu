@@ -26,4 +26,8 @@ XKBOPTIONS="grp:alt_shift_toggle,caps:escape_shifted_capslock,ctrl:swap_lwin_lct
 <tr><td>CMD+Shift</td><td>Layout</td><td>grp:alt_shift_toggle</td></tr>
 <table>
 
+**List all XKBOPTIONS keys presented in manual page:**
 
+```
+man xkeyboard-config
+```
