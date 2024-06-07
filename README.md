@@ -10,6 +10,6 @@
 ### 8. [Instruction](HunSpellinApps.md) how to activate spell chek in some Ubuntu apps
 ### 9  [Instruction](VideoCapture.md) how to capture video from desktop with ffmpeg
 ### 10  [Instruction](TorBridge.md) how to setup standalone Tor with obfs4 bridges on Ubuntu
-### 11  [Instruction](BlueToothCtl.md) how to pair bluetooth devices in console
+### 11  [Instruction](BueToothCtl.md) how to pair bluetooth devices in console
 
 
