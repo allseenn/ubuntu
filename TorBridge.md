@@ -1,9 +1,26 @@
 # How to setup standalone tor server (not tor-browser) to use obfs4 bridges
 
+
 ## Install tor and obfs4proxy
+
+### Ubuntu
 
 ```bash
 apt instll tor obfs4proxy
+```
+
+### RedHat
+
+```bash
+yum install tor
+```
+
+```bash
+wget https://rpmfind.net/linux/opensuse/tumbleweed/repo/oss/x86_64/obfs4-0.0.13-1.14.x86_64.rpm
+```
+
+```bash
+yum install ./obfs4-0.0.13-1.14.x86_64.rpm
 ```
 
 ## Get bridges paramas
