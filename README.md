@@ -13,6 +13,8 @@
 ### 11  [Instruction](BueToothCtl.md) how to pair bluetooth devices in console
 ### 12  [Instruction](LibNcurses5.md) how to install old libncurses5 on new Ubuntu 24.04
 ### 13  [Instruction](XFCEshortcuts.md) how to install import/export keyboard shortcuts in XFCE
+### 14  [Instruction](SSHStartx.md) how to install start X remotle by SSH
+ 
 
 
 
