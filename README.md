@@ -11,5 +11,7 @@
 ### 9  [Instruction](VideoCapture.md) how to capture video from desktop with ffmpeg
 ### 10  [Instruction](TorBridge.md) how to setup standalone Tor with obfs4 bridges on Ubuntu
 ### 11  [Instruction](BueToothCtl.md) how to pair bluetooth devices in console
+### 12  [Instruction](Xfce4AltKey.md) how to free Alt key in Xfce for other apps
+
 
 
