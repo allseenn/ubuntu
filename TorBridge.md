@@ -30,12 +30,14 @@ With subject: get bridges
 
 And you recive automatic response with one bridge.
 Its recomended to use several bridges for relaible connections.
+You could use second mailbox or wait for 3 hours.
 
 ## Config settings
 
 Edit /etc/tor/torrc
 
 ```bash
+HTTPTunnelPort 8118
 SocksPort 192.168.1.11:9050
 SocksPolicy accept 192.168.1.0/24
 SocksPolicy accept 127.0.0.1/8
@@ -65,4 +67,5 @@ systectl restart tor
 tail -f /var/log/tor/notices.log
 ```
 
-Finaly make settings for you browser
+Wait for Bootstrapped 100% appears.
+And adust settings for you browser.

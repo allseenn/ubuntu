@@ -8,10 +8,12 @@
 ### 6. [Instruction](https://github.com/allseenn/dict_ruen) how to install Russian-English dictionary
 ### 7. [Instruction](MacBookVimKeys.md) how to remap key on MacBookPro with Ubuntu for vim
 ### 8. [Instruction](HunSpellinApps.md) how to activate spell chek in some Ubuntu apps
-### 9  [Instruction](VideoCapture.md) how to capture video from desktop with ffmpeg
+### 9.  [Instruction](VideoCapture.md) how to capture video from desktop with ffmpeg
 ### 10  [Instruction](TorBridge.md) how to setup standalone Tor with obfs4 bridges on Ubuntu
 ### 11  [Instruction](BueToothCtl.md) how to pair bluetooth devices in console
-### 12  [Instruction](Xfce4AltKey.md) how to free Alt key in Xfce for other apps
-
+### 12  [Instruction](LibNcurses5.md) how to install old libncurses5 on new Ubuntu 24.04
+### 13  [Instruction](XFCEshortcuts.md) how to install import/export keyboard shortcuts in XFCE
+### 14  [Instruction](SSHStartx.md) how to install start X remotle by SSH
+### 15  [Instruction](Xfce4AltKey.md) how to free Alt key in Xfce for other apps
 
 
