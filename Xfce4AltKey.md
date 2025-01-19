@@ -1,4 +1,4 @@
-# Free Alt key for Xfce 4 GUT
+# Free Alt key for Xfce 4 GUI
 
 By default, the Alt key + Left mouse on Xfce 4 is used for window moving and resizing.
 Its problem for default alt key behavior for most applications such Figma or Visual Studio Code.
