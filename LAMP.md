@@ -7,10 +7,10 @@ Linux Apache (Nginx) MySQL and PHP
 ### Install packages
 
 ```sh
-yum install nginx-all-modules php-fpm php-mysqlnd mysql-server
+yum install nginx-all-modules php-fpm php-cli php-mysqlnd mysql-server
 ```
 
-### create and edit conf file for virual host
+### create and edit conf file for virtual host
 
 /etc/nginx/conf.d/example.com.conf:
 
