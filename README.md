@@ -17,3 +17,5 @@
 ### 15  [Instruction](Xfce4AltKey.md) how to free Alt key in Xfce for other apps
 ### 16  [Instruction](InstallCertBotOnUbuntu.md) how to install certbot on Ubuntu for nginx
 ### 17  [Instruction](HowToConstrainDnsmasqGiveOnlyIpv4.md) how to constrain dnsmasq to give only ipv4 address for clients
+### 18  [Instruction](McOpenWithXdgopen.md) how to open files GUI app from terminal with midnight commander
+
