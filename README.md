@@ -18,4 +18,4 @@
 ### 16. [Instruction](InstallCertBotOnUbuntu.md) how to install certbot on Ubuntu for nginx
 ### 17. [Instruction](HowToConstrainDnsmasqGiveOnlyIpv4.md) how to constrain dnsmasq to give only ipv4 address for clients
 ### 18. [Instruction](McOpenWithXdgopen.md) how to open files GUI app from terminal with midnight commander
-
+### 19. [Instruction](HowToDisableResolved.md) how to disable resolved on Ubuntu for better dns resolutions
