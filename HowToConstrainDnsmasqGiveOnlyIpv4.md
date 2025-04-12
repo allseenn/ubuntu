@@ -31,3 +31,8 @@ To flush DNS cache on local (clients) machine:
 sudo resolvectl flush-caches
 ```
 
+OR in case of NetworkManager we could delete DNS-server choice from it:
+
+```bash
+sudo ln -s /run/NetworkManager/resolv.conf /etc/resolv.conf
+```
