@@ -12,7 +12,13 @@ The reason is that the Vim editor and its predecessor, Vi, were developed for ol
 To prevent finger strain, you can remap the keyboard keys using the standard Ubuntu file located at /etc/default/keyboard. Modify the XKBOPTIONS value according to your preference. In my case, the option is:
 
 ```
-XKBOPTIONS="grp:alt_shift_toggle,caps:escape_shifted_capslock,ctrl:swap_lwin_lctl,ctrl:swap_rwin_rctl"
+XKBOPTIONS="grp:alt_shift_toggle,caps:ctrl:swapcamp"
+```
+
+For ReadHat use following command:
+
+```bash
+sudo localectl set-x11-keymap us,ru pc105 grp:alt_shift_toggle ctrl:swapcaps
 ```
 
 **The table describes the hardware keys and their corresponding remapped counterparts along with the options**
