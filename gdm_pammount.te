@@ -1,0 +1,128 @@
+module gdm_pammount 1.0;
+
+require {
+    type xdm_t;
+    type chkpwd_t;
+    type mount_t;
+    type lvm_control_t;
+    type fixed_disk_device_t;
+    type shadow_t;
+    type init_t;
+    type unconfined_t;
+    type systemd_logind_t;
+    type policykit_t;
+    type policykit_auth_t;
+    type device_t;
+    type user_devpts_t;
+    type thumb_t;
+    type initrc_t;
+    type geoclue_t;
+    type sshd_t;
+    type kernel_t;
+    type loop_control_device_t;
+    type user_home_t;
+    class process { noatsecure rlimitinh siginh setsched };
+    class capability { sys_admin net_admin dac_override dac_read_search ipc_lock };
+    class chr_file { getattr read write open ioctl };
+    class blk_file { getattr read write open ioctl };
+    class dir { search add_name write remove_name read };
+    class system ipc_info;
+    class file { read write open getattr create unlink lock execute };
+    class filesystem { associate mount remount };
+    class unix_stream_socket { connectto connect fromto read write };
+    class fd use;
+    class alg_socket { create bind setopt accept listen connect write read };
+}
+
+# ===================== ОСНОВНЫЕ РАЗРЕШЕНИЯ =====================
+
+# Разрешить операции с алгоритмическими сокетами
+allow xdm_t self:alg_socket { create bind setopt accept listen connect write read };
+
+# Разрешить capability (для монтирования и системных операций)
+allow xdm_t self:capability { sys_admin net_admin dac_override dac_read_search ipc_lock };
+
+# Разрешить взаимодействие с PAM-модулями
+allow xdm_t chkpwd_t:process { noatsecure rlimitinh siginh };
+
+# Разрешить взаимодействие с mount_t
+allow xdm_t mount_t:process { noatsecure rlimitinh siginh };
+
+# ===================== ДОСТУП К УСТРОЙСТВАМ =====================
+
+# Полный доступ к /dev/mapper/control (lvm_control_t)
+allow xdm_t lvm_control_t:chr_file { getattr read write open ioctl };
+allowxperm xdm_t lvm_control_t:chr_file ioctl 0xfd0c;
+allowxperm xdm_t lvm_control_t:chr_file ioctl 0xfd0d;
+allowxperm xdm_t lvm_control_t:chr_file ioctl 0xfd00;
+allowxperm xdm_t lvm_control_t:chr_file ioctl 0xfd11;
+allowxperm xdm_t lvm_control_t:chr_file ioctl 0xfd03;
+allowxperm xdm_t lvm_control_t:chr_file ioctl 0xfd09;
+allowxperm xdm_t lvm_control_t:chr_file ioctl 0xfd06;
+
+# Полный доступ к loop-control устройству
+allow xdm_t loop_control_device_t:chr_file { getattr read write open ioctl };
+allowxperm xdm_t loop_control_device_t:chr_file ioctl 0x4c82;
+
+# Доступ к loop-устройствам (fixed_disk_device_t)
+allow xdm_t fixed_disk_device_t:blk_file { getattr read write open ioctl };
+allowxperm xdm_t fixed_disk_device_t:blk_file ioctl 0x4c0a;
+allowxperm xdm_t fixed_disk_device_t:blk_file ioctl 0x4c05;
+allowxperm xdm_t fixed_disk_device_t:blk_file ioctl 0x1268;
+allowxperm xdm_t fixed_disk_device_t:blk_file ioctl 0x125e;
+allowxperm xdm_t fixed_disk_device_t:blk_file ioctl 0x1272;
+allowxperm xdm_t fixed_disk_device_t:blk_file ioctl 0x1263;
+
+# Доступ к device-mapper устройствам
+allow xdm_t device_t:blk_file { getattr read write open };
+
+# ===================== ДОСТУП К ФАЙЛАМ И ДИРЕКТОРИЯМ =====================
+
+# Чтение shadow файла
+allow xdm_t shadow_t:file { read open getattr };
+
+# Доступ к домашней директории пользователя
+allow xdm_t user_home_t:file { read write open getattr create unlink lock };
+
+# ===================== СЕТЕВЫЕ И МЕЖПРОЦЕССНЫЕ ВЗАИМОДЕЙСТВИЯ =====================
+
+# Разрешить ipc_info для kernel_t
+allow xdm_t kernel_t:system ipc_info;
+
+# Разрешить взаимодействие с unconfined_t
+allow xdm_t unconfined_t:process { noatsecure rlimitinh siginh };
+
+# ===================== СИСТЕМНЫЕ СЕРВИСЫ =====================
+
+# Разрешить net_admin capability для systemd_logind_t
+allow systemd_logind_t self:capability net_admin;
+
+# Разрешить взаимодействие между init_t и chkpwd_t
+allow init_t chkpwd_t:process { siginh };
+
+# Разрешить чтение shadow файла для init_t
+allow init_t shadow_t:file { read open getattr };
+
+# Разрешить взаимодействие между init_t и unconfined_t
+allow init_t unconfined_t:process { siginh };
+
+# Разрешения для PolicyKit
+allow policykit_t policykit_auth_t:process { noatsecure rlimitinh siginh };
+
+# ===================== ДОПОЛНИТЕЛЬНЫЕ РАЗРЕШЕНИЯ =====================
+
+# Для chkpwd_t
+allow chkpwd_t user_devpts_t:chr_file { read write };
+
+# Для geoclue_t
+allow geoclue_t self:process { setsched };
+
+# Для init_t
+allow init_t initrc_t:process { siginh };
+
+# Для thumb_t
+allow thumb_t unconfined_t:unix_stream_socket { read write };
+
+# Для sshd_t
+allow sshd_t shadow_t:file open;
+allow sshd_t unconfined_t:process { noatsecure siginh };
