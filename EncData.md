@@ -1,4 +1,4 @@
-# Encrypt folder
+# Encrypted virtial disk
 
 How to encrypt data with [veracrypt](https://veracrypt.io) container for automatic mount with [pam_mount](https://wiki.archlinux.org/title/Pam_mount) and [pam.d](https://wiki.archlinux.org/title/Pam.d).
 
