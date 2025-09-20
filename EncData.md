@@ -80,7 +80,7 @@ vim /etc/security/pam_mount.conf.xml:
 ```diff
                 <!-- Volume definitions -->
 +<volume user="USER" fstype="crypt" path="/home/USER/vera" mountpoint="vera" />
-+<volume user="USER" fstype="auto" path="/home/USER/vera" mountpoint="/mnt/vera" />
++<volume user="USER" fstype="auto" path="/home/USER/vera" mountpoint="/mnt/vera" options="umask=077,uid=USER,gid=USER"/>
 +<cryptmount>cryptsetup --type tcrypt open %(VOLUME) %(MNTPT)</cryptmount>
 +<cryptumount>cryptsetup close %(MNTPT)</cryptumount>
 +<umount>umount /mnt/vera</umount>
