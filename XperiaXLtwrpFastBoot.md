@@ -1,5 +1,6 @@
 # Howto install last version of twrp with Debian (13) on xperia zl
-Установка последней версии twrp с помощью Debian (13) на xperia zl
+
+Instruction will guide you through the process of installation of twrp with Debian (13) on Sony Xperia ZL (C6503)
 
 1. download the latest version of twrp here https://dl.twrp.me/odin/ on Debian in the desired directory, for example /tmp
 2. downloaded file will have a name like twrp-3.6.0_9-0-odin.img, place it in /tmp
@@ -47,3 +48,5 @@ Finished. Total time: 1.157s
 16. After successful update (installation) twrp disconnect the usb-cable from the phone
 17. Switch on the power button of the phone and hold the volume up key until the logo appears
 18. After successful update (installation) twrp disconnect the usb-cable from the phone
+
+If you install firmware without embedded twrp, then you will need this instruction again )
