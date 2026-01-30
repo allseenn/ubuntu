@@ -40,6 +40,6 @@
 
 ### 20. [Instruction](EncData.md) how to automount veracrypt encrypted container with user login
 
-### 22. [Instruction](XperiaXLtwrpFastBoot.md) how to flash twrp with fastboot on Xperia XL with Ubuntu (Debian)
+### 21. [Instruction](XperiaXLtwrpFastBoot.md) how to flash twrp with fastboot on Xperia XL with Ubuntu (Debian)
 
-### 23 [Instuction](SSHkeys.md) how work with ssh keys loaded with agent: load, unload, list and search
+### 22 [Instuction](SSHkeys.md) how work with ssh keys loaded with agent: load, unload, list and search
