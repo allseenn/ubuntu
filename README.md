@@ -43,3 +43,5 @@
 ### 21. [Instruction](XperiaXLtwrpFastBoot.md) how to flash twrp with fastboot on Xperia XL with Ubuntu (Debian)
 
 ### 22 [Instuction](SSHkeys.md) how work with ssh keys loaded with agent: load, unload, list and search
+
+### 23 [Instuction](caUsTrustedAndroid.md) how to install ca-trusted pem certificate on android 
