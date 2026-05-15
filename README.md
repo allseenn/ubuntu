@@ -20,3 +20,4 @@
 ### 18. [Instruction](McOpenWithXdgopen.md) how to open files GUI app from terminal with midnight commander
 ### 19. [Instruction](HowToDisableResolved.md) how to disable resolved on Ubuntu for better dns resolutions
 ### 20. [Instruction](EncData.md) how to automount veracrypt encrypted container with user login
+### 21. [Instruction](GeminiForChrome.md) how to setup gemini at chrome browser
