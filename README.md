@@ -47,3 +47,5 @@
 ### 23 [Instuction](caUsTrustedAndroid.md) how to install ca-trusted pem certificate on android 
 
 ### 24. [Instruction](GeminiForChrome.md) how to setup gemini at chrome browser
+
+### 25. [Instruciont](MarkDownEmmet.md) how to add emmet support in md files for VSC
