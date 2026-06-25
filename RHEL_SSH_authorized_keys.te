@@ -1,0 +1,13 @@
+
+module rhel_ssh_fix 1.0;
+
+require {
+	type sshd_t;
+	type dosfs_t;
+	type mount_var_run_t;
+	class file { getattr open read };
+}
+
+#============= sshd_t ==============
+allow sshd_t dosfs_t:file { getattr open read };
+allow sshd_t mount_var_run_t:file { open read };
