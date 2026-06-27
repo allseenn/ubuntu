@@ -48,4 +48,6 @@
 
 ### 24. [Instruction](GeminiForChrome.md) how to setup gemini at chrome browser
 
-### 25. [Instruciont](MarkDownEmmet.md) how to add emmet support in md files for VSC
+### 25. [Instruction](MarkDownEmmet.md) how to add emmet support in md files for VSC
+
+### 26. [Instruction](./Fail2Ban.md) how to work and configure Fail2Ban
