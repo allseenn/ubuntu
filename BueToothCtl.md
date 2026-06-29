@@ -55,3 +55,17 @@ paired-devices
 remove <MAC>
 ```
 
+## Troubleshooting
+
+### lsusb
+
+Most bluetooth adapters integrated with wifi on laptops have a USB interface. You could check it with command:
+
+```bash
+lsusb | grep -i bluetooth
+```
+
+```output
+Bus 004 Device 003: ID 8087:0032 Intel Corp. AX210 Bluetooth
+```
+
